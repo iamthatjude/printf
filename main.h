@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdarg.h>
 #include <unistd.h>
@@ -19,6 +19,7 @@ typedef struct print
 	int (*f)(va_list, char *, unsigned int);
 } print_t;
 
+/* Function Declaration: function type, names and parameters can come here */
 int _printf(const char *format, ...);
 int print_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_chr(va_list arguments, char *buf, unsigned int ibuf);
